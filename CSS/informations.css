@@ -1,6 +1,7 @@
 .block {
     display: flex;
     justify-content: space-around;
+    padding: 5vw;
 }
 
 .container1 {
@@ -25,4 +26,19 @@
 
 .info {
     text-align: center;
+    padding-top: 5vw;
+}
+
+.lien {
+    color: rgb(47, 46, 46);
+    background-color: azure;
+    margin: 5px;
+}
+
+.lien:hover {
+    text-decoration: none;
+    color: rgb(47, 46, 46);
+    background-color: rgb(69, 156, 156);
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
