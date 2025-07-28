@@ -20,10 +20,12 @@
     border: solid;
     border-width: 2px;
     color: rgb(47, 46, 46);
-    width: 5rem;
+    width: auto;
     text-align: center;
+    display: inline-block;
     padding: 10px;
     margin: 0.1vw;
+    margin-top: 1vh;
     font-size: 1rem;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
