@@ -1,5 +1,14 @@
-// lecture du JSON
+// intialisation
 var promotion;
+var affichage;
+
+function init() {
+    check();
+    promo();
+    document.getElementById("liste").addEventListener("click", hideC);
+    document.getElementById("cartes").addEventListener("click", hideT);
+}
+// lecture du JSON
 
 function promo() {
     fetch("JS/promo.json")
@@ -13,8 +22,6 @@ function afficher(data) {
     console.log(promotion);
     template();
 }
-
-promo();
 
 // mise en place des données
 function template() {
@@ -34,3 +41,33 @@ function template() {
         );
     });
 }
+
+// vérifier les préférences
+function check() {
+    if (localStorage.getItem("affichage")) {
+        affichage = localStorage.getItem("affichage");
+        if (affichage === "liste") {
+            document.getElementById("liste").checked = true;
+            document.getElementById("cartes").checked = false;
+            document.getElementById("boxCartes").classList.add("hide");
+        } else if (affichage === "cartes") {
+            document.getElementById("cartes").checked = true;
+            document.getElementById("liste").checked = false;
+            document.getElementById("tableau").classList.add("hide");
+        }
+    }
+}
+
+// cacher tableau
+function hideT() {
+    document.getElementById("tableau").classList.add("hide");
+    document.getElementById("boxCartes").classList.remove("hide");
+}
+//cacher cartes
+function hideC() {
+    document.getElementById("boxCartes").classList.add("hide");
+    document.getElementById("tableau").classList.remove("hide");
+}
+
+// start
+init();

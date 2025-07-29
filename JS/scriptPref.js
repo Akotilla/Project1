@@ -1,3 +1,5 @@
+//intialisation
+
 var theme;
 var affichage;
 
@@ -17,8 +19,10 @@ function check() {
         affichage = localStorage.getItem("affichage");
         if (affichage === "liste") {
             document.getElementById("liste").checked = true;
+            document.getElementById("cartes").checked = false;
         } else if (affichage === "cartes") {
             document.getElementById("cartes").checked = true;
+            document.getElementById("liste").checked = false;
         }
     }
     if (localStorage.getItem("theme")) {
