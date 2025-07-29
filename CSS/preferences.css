@@ -2,6 +2,17 @@
     text-align: center;
     padding-top: 5rem;
 }
-
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .preferences {
+    border-collapse: collapse;
+    width: auto;
+}
+
+.column1 {
+    width: 35vw;
 }

@@ -22,23 +22,23 @@
             </div>
         </nav>
         <h2 class="center">Préférences du site</h2>
-        <form action="" method="get" class="preferences"></form>
-        <table>
+        <form action="" method="get" class="parent">
+        <table class="preferences">
             <tr>
-                <td><label for="theme">Thème du site</label></td>
-                <td><select name="dark-light" id="theme">
+                <td class="column1"><label for="theme">Thème du site</label></td>
+                <td class="column2"><select name="dark-light" id="theme">
                     <option value="" disabled>-- Choisir une option --</option>
                     <option value="light">Clair</option>
                     <option value="dark">Sombre</option>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="column1">
                     <label for="affichage"
                         >Format d'affichage de la liste des apprenants</label
                     >
                 </td>
-                <td>
+                <td class="column2">
                     <input type="radio" name="affichage" id="liste" checked />
                     <label for="liste">Liste (Table)</label>
                     <input type="radio" name="affichage" id="cartes" />
@@ -46,6 +46,7 @@
                 </td>
             </tr>
         </table>
+        </form>
          <footer>
             <div>
                 <a class="btnRetour" href="accueil.html"
@@ -53,10 +54,11 @@
                 >
             </div>
             <div>
-                <a class="btnRetour" href=""
+                <a id="enregistrer" class="btnRetour" href=""
                     >Enregistrer</a
                 >
             </div>
         </footer>
     </body>
+    <script src="JS/script.js"></script>
 </html>
