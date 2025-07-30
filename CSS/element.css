@@ -29,3 +29,18 @@
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+.boxCartes a {
+    background-color: #ffffff;
+    border: solid;
+    border-width: 3px;
+    color: rgb(47, 46, 46);
+    width: 3rem;
+    text-align: center;
+    display: inline-block;
+    padding: 3px;
+    margin: 0.1vw;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

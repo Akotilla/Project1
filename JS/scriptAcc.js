@@ -27,6 +27,7 @@ function afficher(data) {
 function template() {
     console.log(promotion[0]);
     let tableau = document.getElementById("template");
+    let cartes = document.getElementById("boxCartes");
 
     promotion.forEach((element) => {
         tableau.insertAdjacentHTML(
@@ -37,7 +38,17 @@ function template() {
                 element.prenom +
                 "</td><td>" +
                 element.ville +
-                "</td><td><a href=''>details</a></td></tr>"
+                "</td><td><a href=''>Details</a></td></tr>"
+        );
+    });
+    promotion.forEach((element) => {
+        cartes.insertAdjacentHTML(
+            "beforeend",
+            "<div class='boxCartes'><p>" +
+                element.nom +
+                "</p><p>" +
+                element.prenom +
+                "</p><p><a href=''>Details</a></p></div>"
         );
     });
 }
