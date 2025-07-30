@@ -49,7 +49,7 @@ td {
     justify-content: center;
 }
 
-#boxCartes {
+#box {
     width: 100%;
     display: flex;
     justify-content: space-evenly;

@@ -27,7 +27,7 @@ function afficher(data) {
 function template() {
     console.log(promotion[0]);
     let tableau = document.getElementById("template");
-    let cartes = document.getElementById("boxCartes");
+    let cartes = document.getElementById("box");
 
     promotion.forEach((element) => {
         tableau.insertAdjacentHTML(
