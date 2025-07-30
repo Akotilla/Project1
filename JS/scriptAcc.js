@@ -38,7 +38,7 @@ function template() {
                 element.prenom +
                 "</td><td>" +
                 element.ville +
-                "</td><td><a href=''>Details</a></td></tr>"
+                "</td><td><a href=''>Detail</a></td></tr>"
         );
     });
     promotion.forEach((element) => {
@@ -48,7 +48,7 @@ function template() {
                 element.nom +
                 "</p><p>" +
                 element.prenom +
-                "</p><p><a href=''>Details</a></p></div>"
+                "</p><p><a href=''>Detail</a></p></div>"
         );
     });
 }

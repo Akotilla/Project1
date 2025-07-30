@@ -8,7 +8,6 @@ function init() {
     document
         .getElementById("enregistrer")
         .addEventListener("click", function (event) {
-            event.preventDefault();
             get();
         });
 }

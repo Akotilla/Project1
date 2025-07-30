@@ -24,3 +24,23 @@ footer {
 .logo {
     width: auto;
 }
+
+/* mise en forme du thème light-dark */
+
+:root {
+    --light-bg: ghostwhite;
+    --light-color: darkslategray;
+
+    --dark-bg: darkslategray;
+    --dark-color: ghostwhite;
+}
+
+#light {
+    background-color: var(--light-bg);
+    color: var(--light-color);
+}
+
+#dark {
+    background-color: var(--dark-bg);
+    color: var(--dark-color);
+}
