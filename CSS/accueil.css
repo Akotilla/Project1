@@ -10,6 +10,8 @@ aside {
 /* tableau liste des apprenants */
 table {
     table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     border-collapse: collapse;
     border: 2px solid;
@@ -17,6 +19,11 @@ table {
     overflow: auto;
     border-color: black;
     box-shadow: rgba(0, 0, 0, 0.8) 1.95px 1.95px 2.6px;
+}
+@media screen and (max-width: 768px) {
+    table {
+        width: 96vw;
+    }
 }
 body#light table tr:nth-child(even) {
     background-color: var(--dark-bg);
