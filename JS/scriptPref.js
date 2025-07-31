@@ -1,8 +1,4 @@
 //intialisation
-
-var theme;
-var affichage;
-
 function init() {
     check();
     document
@@ -15,38 +11,37 @@ function init() {
 //vérifier les valeurs localStorage
 function check() {
     if (localStorage.getItem("affichage")) {
-        affichage = localStorage.getItem("affichage");
-        if (affichage === "liste") {
-            document.getElementById("liste").checked = true;
-            document.getElementById("cartes").checked = false;
-        } else if (affichage === "cartes") {
+        const affichage = localStorage.getItem("affichage");
+        if (affichage === "cartes") {
             document.getElementById("cartes").checked = true;
             document.getElementById("liste").checked = false;
+        } else {
+            document.getElementById("liste").checked = true;
+            document.getElementById("cartes").checked = false;
         }
     }
     if (localStorage.getItem("theme")) {
-        theme = localStorage.getItem("theme");
+        const theme = localStorage.getItem("theme");
         document.getElementById("theme").value = theme;
     }
 }
 
 // récupérer les valeurs au clic
 function get() {
-    let liste = document.getElementById("liste").checked;
-    let cartes = document.getElementById("cartes").checked;
-    theme = document.getElementById("theme").value;
-    console.log(liste);
+    let affichage;
+    const liste = document.getElementById("liste").checked;
+    const cartes = document.getElementById("cartes").checked;
+    const theme = document.getElementById("theme").value;
     if (liste) {
         affichage = "liste";
-    }
-    if (cartes) {
+    } else {
         affichage = "cartes";
     }
-    store();
+    store(affichage, theme);
 }
 
 // stocker les valeurs localStorage
-function store() {
+function store(affichage, theme) {
     localStorage.setItem("affichage", affichage);
     localStorage.setItem("theme", theme);
 }
