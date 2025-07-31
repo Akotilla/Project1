@@ -6,9 +6,13 @@ p {
     margin: 1px;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 .center {
     text-align: center;
-    padding-top: 5vw;
+    margin-top: 5vw;
 }
 
 /* mise en forme nav-barre */
@@ -33,11 +37,11 @@ footer {
 /* mise en forme du thème light-dark */
 
 :root {
-    --light-bg: ghostwhite;
+    --light-bg: rgb(190, 209, 209);
     --light-color: darkslategray;
 
     --dark-bg: darkslategray;
-    --dark-color: ghostwhite;
+    --dark-color: rgb(190, 209, 209);
 }
 
 #light {
@@ -48,4 +52,18 @@ footer {
 #dark {
     background-color: var(--dark-bg);
     color: var(--dark-color);
+}
+
+body#light h2,
+body#light h3 {
+    background-color: var(--dark-bg);
+    color: var(--dark-color);
+    box-shadow: rgba(0, 0, 0, 0.8) 1.95px 1.95px 2.6px;
+}
+
+body#dark h2,
+body#dark h3 {
+    background-color: var(--light-bg);
+    color: var(--light-color);
+    box-shadow: rgba(0, 0, 0, 0.8) 1.95px 1.95px 2.6px;
 }

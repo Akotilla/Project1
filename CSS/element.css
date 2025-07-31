@@ -30,6 +30,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.tableau a,
 .boxCartes a {
     background-color: #ffffff;
     border: solid;
@@ -43,4 +44,20 @@
     font-size: 1rem;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.menu:hover,
+.btnRetour:hover,
+.tableau a:hover,
+.boxCartes a:hover {
+    background-color: rgb(82, 117, 117);
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+
+.menu:active,
+.btnRetour:active,
+.tableau a:active,
+.boxCartes a:active {
+    background-color: var(--light-color);
 }

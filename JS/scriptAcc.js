@@ -25,7 +25,7 @@ function template(promotion) {
     console.log(promotion[0]);
     const tableau = document.getElementById("contenuConditionnel");
     const container = document.getElementById("table");
-    let cartes = document.getElementById("box");
+    const cartes = document.getElementById("box");
 
     promotion.forEach((item) => {
         const clone = tableau.content.cloneNode(true);
