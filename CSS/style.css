@@ -16,12 +16,48 @@ h1 {
 }
 
 /* mise en forme nav-barre */
-nav {
+.displayR {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
+.displayC {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#mobile {
+    display: none;
+}
+
+#screen {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+        display: block;
+        font-size: 5rem;
+        color: inherit;
+    }
+    .icon:hover {
+        color: grey;
+    }
+    .myLinks {
+        visibility: hidden;
+    }
+    #mobile {
+        display: flex;
+    }
+
+    #screen {
+        display: none;
+    }
+}
+
+/**/
 
 footer {
     text-align: center;

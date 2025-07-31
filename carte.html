@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="CSS/carte.css" />
         <link
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
             href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
             integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
             crossorigin=""
@@ -20,11 +24,11 @@
         ></script>
     </head>
     <body>
-        <nav>
+         <nav id="screen" class="displayR">
             <div class="logo">
                 <img src="image/logo.png" alt="logo ENI-ecole" />
             </div>
-            <h1>Promo XXXXXXXX</h1>
+            <div><h1>Promo XXXXXXXX</h1></div>
             <div>
                 <a class="menu" href="accueil.html">Accueil</a>
                 <a class="menu" href="preferences.html">Préférences</a>
@@ -32,6 +36,23 @@
                 <a class="menu" href="informations.html">Informations</a>
             </div>
         </nav>
+        <nav id="mobile" class="displayC"><section class="displayR">
+            <div class="logo">
+                <img src="image/logo.png" alt="logo ENI-ecole" />
+            </div>
+            <div><h1>Promo XXXXXXXX</h1></div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+              </section>
+              <section class="myLinks">
+                <a class="menu" href="accueil.html">Accueil</a>
+                <a class="menu" href="preferences.html">Préférences</a>
+                <a class="menu" href="carte.html">Carte</a>
+                <a class="menu" href="informations.html">Informations</a>
+                </section>
+            </div>
+            </nav>
         <h2 class="center">Carte</h2>
         <div id="map"></div>
     </body>

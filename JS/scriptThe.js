@@ -6,3 +6,13 @@ if (localStorage.getItem("theme")) {
         document.body.setAttribute("id", "dark");
     }
 }
+
+function myFunction() {
+    console.log(document.querySelector(".myLinks"));
+    var x = document.querySelector(".myLinks");
+    if (x.style.visibility === "hidden" || x.style.visibility === "") {
+        x.style.visibility = "visible";
+    } else {
+        x.style.visibility = "hidden";
+    }
+}
