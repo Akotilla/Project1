@@ -1,5 +1,4 @@
 // intialisation
-var promotion;
 var affichage;
 
 function init() {
@@ -17,30 +16,39 @@ function promo() {
 }
 
 function afficher(data) {
-    console.log(data);
-    promotion = data.apprenants;
-    console.log(promotion);
-    template();
+    const promotion = data.apprenants;
+    template(promotion);
 }
 
 // mise en place des données
-function template() {
+function template(promotion) {
     console.log(promotion[0]);
-    let tableau = document.getElementById("template");
+    const tableau = document.getElementById("contenuConditionnel");
+    const container = document.getElementById("table");
     let cartes = document.getElementById("box");
 
-    promotion.forEach((element) => {
-        tableau.insertAdjacentHTML(
-            "beforeend",
-            "<tr><td>" +
-                element.nom +
-                "</td><td>" +
-                element.prenom +
-                "</td><td>" +
-                element.ville +
-                "</td><td><a href=''>Detail</a></td></tr>"
-        );
+    promotion.forEach((item) => {
+        const clone = tableau.content.cloneNode(true);
+        const tds = clone.querySelectorAll("td");
+        tds[0].textContent = item.nom;
+        tds[1].textContent = item.prenom;
+        tds[2].textContent = item.ville;
+        tds[3].innerHTML = "<a href='' >Detail</a>";
+        container.appendChild(clone);
     });
+
+    // promotion.forEach((element) => {
+    //     tableau.insertAdjacentHTML(
+    //         "beforeend",
+    //         "<tr><td>" +
+    //             element.nom +
+    //             "</td><td>" +
+    //             element.prenom +
+    //             "</td><td>" +
+    //             element.ville +
+    //             "</td><td><a href=''>Detail</a></td></tr>"
+    //     );
+    // });
     promotion.forEach((element) => {
         cartes.insertAdjacentHTML(
             "beforeend",
