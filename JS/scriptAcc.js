@@ -1,6 +1,4 @@
 // intialisation
-var affichage;
-
 function init() {
     check();
     promo();
@@ -64,12 +62,12 @@ function template(promotion) {
 // vérifier les préférences
 function check() {
     if (localStorage.getItem("affichage")) {
-        affichage = localStorage.getItem("affichage");
+        const affichage = localStorage.getItem("affichage");
         if (affichage === "liste") {
             document.getElementById("liste").checked = true;
             document.getElementById("cartes").checked = false;
             document.getElementById("boxCartes").classList.add("hide");
-        } else if (affichage === "cartes") {
+        } else {
             document.getElementById("cartes").checked = true;
             document.getElementById("liste").checked = false;
             document.getElementById("tableau").classList.add("hide");
