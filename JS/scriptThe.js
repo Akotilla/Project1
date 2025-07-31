@@ -1,11 +1,8 @@
 if (localStorage.getItem("theme")) {
-    theme = localStorage.getItem("theme");
-    console.log(theme);
-    console.log(theme == "light");
-    console.log(theme == "dark");
+    const theme = localStorage.getItem("theme");
     if (theme === "light") {
         document.body.setAttribute("id", "light");
-    } else if (theme === "dark") {
+    } else {
         document.body.setAttribute("id", "dark");
     }
 }
