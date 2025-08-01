@@ -24,7 +24,10 @@ function lecture() {
 }
 
 function afficher(data) {
-    document.querySelector("h1").textContent = "Promo: " + data.nomPromotion;
+    let h1s = document.querySelectorAll("h1");
+    h1s[0].textContent = "Promo: " + data.nomPromotion;
+    h1s[1].textContent = "Promo: " + data.nomPromotion;
+
     if (document.querySelector(".dateDebut")) {
         document.querySelector(".dateDebut").textContent = data.dateDebut;
     }
