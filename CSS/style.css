@@ -39,7 +39,17 @@ h1 {
 @media screen and (max-width: 1000px) {
     h1 {
         font-size: 2.2rem;
-        text-wrap: wrap;
+    }
+
+    .resize {
+        display: flex;
+        flex-direction: column;
+    }
+    div.container1,
+    div.container2 {
+        width: 80%;
+        margin: auto;
+        height: auto;
     }
 
     .icon {
@@ -72,6 +82,14 @@ h1 {
 @media screen and (max-width: 650px) {
     h1 {
         font-size: 1.5rem;
+    }
+
+    #box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boxCartes {
+        width: 40vw !important;
     }
 }
 
