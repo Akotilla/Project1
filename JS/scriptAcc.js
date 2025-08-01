@@ -16,9 +16,17 @@ function promo() {
         .then((data) => afficher(data));
 }
 
+// afficher valeur titre
+function h1(data) {
+    let h1s = document.querySelectorAll("h1");
+    h1s[0].textContent = "Promo: " + data.nomPromotion;
+    h1s[1].textContent = "Promo: " + data.nomPromotion;
+}
+
 function afficher(data) {
     const promotion = data.apprenants;
     template(promotion);
+    h1(data);
 }
 
 // mise en place des données
@@ -42,18 +50,7 @@ function template(promotion) {
         container.appendChild(clone);
     });
 
-    // promotion.forEach((element) => {
-    //     tableau.insertAdjacentHTML(
-    //         "beforeend",
-    //         "<tr><td>" +
-    //             element.nom +
-    //             "</td><td>" +
-    //             element.prenom +
-    //             "</td><td>" +
-    //             element.ville +
-    //             "</td><td><a href=''>Detail</a></td></tr>"
-    //     );
-    // });
+    // peut être remplacé par un template.
     promotion.forEach((element) => {
         cartes.insertAdjacentHTML(
             "beforeend",
@@ -66,6 +63,7 @@ function template(promotion) {
                 "' class='details'>Détail</button></div>"
         );
     });
+    // lien vers code modal
     page2(promotion);
 }
 

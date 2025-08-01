@@ -1,3 +1,4 @@
+//lien scriptAcc execution du modal
 export function page2(promotion) {
     let detailsButton = document.querySelectorAll(".details");
     const favDialog = document.getElementById("favDialog");
@@ -10,6 +11,8 @@ export function page2(promotion) {
             templateDetail(element, promotion);
         });
     });
+
+    //template modal avec enregistrement id pour écraser valeur a chaque ouverture fenetre
 
     function templateDetail(element, promotion) {
         if (typeof favDialog.showModal === "function") {

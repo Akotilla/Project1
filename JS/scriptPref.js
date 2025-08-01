@@ -47,3 +47,20 @@ function store(affichage, theme) {
 }
 
 init();
+
+// lecture du JSON
+
+function lecture() {
+    fetch("JS/promo.json")
+        .then((response) => response.json())
+        .then((data) => h1(data));
+}
+
+// afficher valeur titre
+function h1(data) {
+    let h1s = document.querySelectorAll("h1");
+    h1s[0].textContent = "Promo: " + data.nomPromotion;
+    h1s[1].textContent = "Promo: " + data.nomPromotion;
+}
+
+lecture();
