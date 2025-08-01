@@ -1,4 +1,10 @@
-{
+{ "nomPromotion" : "D2WM 06-2025 (EDWM2506)",
+"dateDebut" : "30.06.2025",
+"dateFin" : "13.02.2026",
+"description" : "Préparation au titre professionnel : Développeur Web Et Web Mobile Certifié par l'Etat de niveau 5. Inscrit au RNCP (titre créé par arrêté du 26 avril 2023 relatif au titre professionnel de développeur web et mobile) Code COPANEF : D2WM : 242878 Les objectifs pédagogiques sont (être capable de) : Maintenir ou programmer une application informatique, Tester une application, Participer aux études fonctionnelles et techniques, Spécifier et concevoir techniquement une application informatique de type client/serveur, n-tier ou mobile.",
+"nbrApprenants": 20,
+
+
   "apprenants" : [
   {
     "id": 1,
