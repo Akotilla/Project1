@@ -105,7 +105,24 @@ body#dark .boxCartes {
 /* modal */
 
 :modal {
-    border: 5px solid red;
-    background-color: yellow;
-    box-shadow: 3px 3px 10px rgba(0 0 0 / 0.5);
+    border: 3px solid var(--dark-bg);
+    background-color: var(--light-bg);
+    box-shadow: rgba(0, 0, 0, 0.8) 1.95px 1.95px 2.6px;
+}
+img {
+    margin: 5px;
+}
+
+.border {
+    border: 1.5px solid;
+    padding: 15px 5px 15px 5px;
+    margin: 5px 0px 5px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
 }

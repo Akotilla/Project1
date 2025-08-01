@@ -31,8 +31,8 @@ export function page2(promotion) {
             }
 
             const ps = clone.querySelectorAll("p");
-            ps[1].textContent = promotion.nom;
-            ps[3].textContent = promotion.prenom;
+            ps[3].textContent = promotion.nom;
+            ps[4].textContent = promotion.prenom;
             ps[5].textContent = promotion.ville;
             ps[7].textContent = promotion.anecdotes;
 

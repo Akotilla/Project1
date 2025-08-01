@@ -2,6 +2,7 @@
 
 .menu {
     background-color: #ffffff;
+
     border: solid;
     border-width: 2px;
     color: rgb(47, 46, 46);
@@ -29,11 +30,12 @@
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
+button,
 .details {
+    border-radius: 5px;
     background-color: #ffffff;
     border: solid;
-    border-width: 3px;
+    border-width: 2px;
     color: rgb(47, 46, 46);
     width: 4rem;
     text-align: center;
@@ -45,6 +47,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+button:hover,
 .menu:hover,
 .btnRetour:hover,
 .details:hover {
@@ -53,6 +56,7 @@
     box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
 }
 
+button:hover,
 .menu:active,
 .btnRetour:active,
 .details:active {
