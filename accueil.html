@@ -74,7 +74,48 @@
         <section id="boxCartes">
             <div id="box"></div>
         </section>
+        <dialog id="favDialog">
+            <form method="dialog" id="dialog">
+                <template id="construction"
+                    ><section>
+                        <div>
+                            <img
+                                src="image/avatar.png"
+                                alt="avatar par default"
+                            />
+                            <img class="imgJson" src="" alt="" />
+                            <div>
+                                <div>
+                                    <p>Nom</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <p>Prenom</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <p>Ville</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Anecdote sur l'apprenant</p>
+                            <p></p>
+                        </div>
+                    </section>
+                </template>
+
+                <menu>
+                    <button value="cancel">Fermer</button>
+                </menu>
+            </form>
+            <output></output>
+        </dialog>
     </body>
-    <script src="JS/scriptAcc.js"></script>
+    <script src="JS/scriptModal.js" type="module" ></script>
+    <script src="JS/scriptAcc.js" type="module"></script>
     <script src="JS/scriptThe.js"></script>
+    
+    
 </html>

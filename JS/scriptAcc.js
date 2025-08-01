@@ -1,3 +1,6 @@
+//import page 2
+import { page2 } from "./scriptModal.js";
+
 // intialisation
 function init() {
     check();
@@ -31,7 +34,11 @@ function template(promotion) {
         tds[0].textContent = item.nom;
         tds[1].textContent = item.prenom;
         tds[2].textContent = item.ville;
-        tds[3].innerHTML = "<a href='' >Detail</a>";
+        tds[3].innerHTML =
+            " <div><button data-id='" +
+            (item.id - 1) +
+            "' class='details'>Détail</button></div>";
+
         container.appendChild(clone);
     });
 
@@ -54,9 +61,12 @@ function template(promotion) {
                 element.nom +
                 "</p><p>" +
                 element.prenom +
-                "</p><p><a href=''>Detail</a></p></div>"
+                "</p><div><button data-id='" +
+                (element.id - 1) +
+                "' class='details'>Détail</button></div>"
         );
     });
+    page2(promotion);
 }
 
 // vérifier les préférences

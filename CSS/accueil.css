@@ -101,3 +101,11 @@ body#dark .boxCartes {
     flex-wrap: wrap;
     align-items: center;
 }
+
+/* modal */
+
+:modal {
+    border: 5px solid red;
+    background-color: yellow;
+    box-shadow: 3px 3px 10px rgba(0 0 0 / 0.5);
+}
